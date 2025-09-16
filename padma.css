@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f8fa;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background: #234567;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #b0d3ff;
+}
+
+nav {
+    background: #16304c;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 0;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #aad7ff;
+    border-bottom: 2px solid #aad7ff;
+}
+
+main section {
+    margin-bottom: 38px;
+}
+
+h2 {
+    color: #234567;
+    margin-bottom: 12px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(35, 69, 103, 0.08);
+    padding: 16px;
+    flex: 1 1 250px;
+    min-width: 220px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(22, 48, 76, 0.09);
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+button {
+    background: #234567;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #16304c;
+}
+
+footer {
+    background: #234567;
+    color: #d9ebff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .project-list {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+}
